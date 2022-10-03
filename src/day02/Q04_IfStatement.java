@@ -1,0 +1,26 @@
+package day02;
+
+import java.util.Scanner;
+
+public class Q04_IfStatement {
+    /*
+     * Kullanicidan Y/N ikilisinden birisini girdiginde girdigi degeri
+     * ekrana yazdiran java kodunu yaziniz.
+     * INPUT : Y ,  N
+     * OUTPUT : YES ; NO
+     */
+
+    public static void main(String[] args) {
+        Scanner scn=new Scanner(System.in);
+        System.out.println("Lütfen Y/N iklisinden birini giriniz : ");
+       char karakter= scn.next().charAt(0);
+
+       if(karakter == 'Y' || karakter == 'y'){
+           System.out.println("YES");
+       }else if(karakter == 'N' || karakter == 'n'){
+           System.out.println("NO");
+       }else {
+           System.out.println("Yanlıs giriş yaptınız... Lütfen tekrar deneyiniz!");
+       }
+    }
+}
